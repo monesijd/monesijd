@@ -10,7 +10,9 @@ Github: https://github.com/monesijd
 
 # APCS 紀錄
 
-實作3級 觀念4級
+實作3級 觀念4級 
+
+時間: 2023年06月04日
 
 # 解題歷程
 
@@ -18,8 +20,26 @@ Github: https://github.com/monesijd
 
 ## beecrowd
 
-一開始學習程式的時候，透過網路資源我找到了 beecrowd 的解題網站。這個網站雖然是英文，但題目都非常入門，很適合我拿來練習新學的程式。相關的解題紀錄，放在https://github.com/monesijd/beecrowd
+一開始學習程式的時候，查詢網路後，我找到了 beecrowd 的解題網站。雖然這個網站是英文，但題目都較為基礎，我認為非常適合拿來練習新學的程式。
+相關的解題紀錄，放在https://github.com/monesijd/beecrowd
 
 ## Zerojudge
 
 我有空的時候會找 ZeroJudge 上的題目練習培養手感，寫的程式碼我會根據題目代號作為命名依據，放在 https://github.com/monesijd/zerojudge
+
+# 專案開發
+
+## 專案一
+
+## 專案二
+
+# 軟體開發實務
+
+# 程式語言
+
+## C
+
+指標
+
+## Python
+
