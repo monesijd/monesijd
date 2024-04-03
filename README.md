@@ -35,11 +35,20 @@ Github: https://github.com/monesijd
 
 # 軟體開發實務
 
+## 版本控制系統 Git
+
+## 編輯器
+
+### VScode
+
+### Neovim
+
 # 程式語言
 
 ## C
 
-指標
+### 指標
 
 ## Python
 
+### 物件導向
