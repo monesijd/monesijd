@@ -83,6 +83,65 @@ q 離開
 set nu(mber)
 ```
 
+### 正規表示式 (Regular Expression)
+
+```
+. 符合任一個字元
+[A-Z] 符合任一大寫字母
+[a-z] 符合任一小寫字母
+[a-zA-Z] 符合任一字母
+[0-9] 可以簡寫成 \d 代表的是 decimal，然後 \D 和 \d 是反義，所以 \D 等同 [^0-9]
+[A-Za-z0-9_] 可以簡寫成 \w 代表的是 word，然後 \W 和 \w 是反義，所以 \W 等同 [^A-Za-z0-9_]
+[ \t\n\r\f\v] 可以簡寫成 \s 代表的是 space，然後 \S 和 \s 是反義，所以 \S 等同 [^ \t\n\r\f\v]
+\b 比對到邊界，boundry 的意思，本身不佔字元。\B 是反義
+
+Quantifiers 量詞 (用來指定前一個字元出現的數量)
+? 0或1個字元
+* 0或多個字元
++ 1或多個字元
+{n, m} 必須出現介於 n 和 m 次數之間
+
+greedy 行為
+re.findall(r'a.+b', 'acbddddddb') => 回傳 ['acbddddddb']
+
+non-greedy 行為 (量詞後面加上一個問號)
+re.findall(r'a.+?b', 'acbddddddb') => 回傳 ['acb']
+
+定位符號
+^ 代表比對開頭的位置
+$ 代表比對結尾的位置
+
+findall 和 search 的差別
+findall 是管家婆，同一行文字就算比對到，還是會繼續往下比對直到字串結束。search 同一行比對到就不會再比對
+
+search 和 match 的差別
+search 只要字串中有符合正規表示式的文字即可，而 match 會特別只從頭比對
+
+正規表示式最好先編譯再比對
+re.* 的呼叫都會即時編譯才比對，當行數很多時會耗用無謂的資源，此時可以先呼叫
+re.compile() 做編譯再比對，可以讓效能拉到最高
+
+記憶小括號 (capturing group)
+() 來記憶你要搜尋的文字內容，根據左小括號出現的順序來決定他的編號，編號從 1 開始。
+有時候根據需要，可以用 \ 加上編號來指定被小括號包起來的字串，比如 \1 代表要比對第一組小括號的文字內容，此種語法叫做回朔，英文叫做 back reference
+```
+
+練習用正規表示式撈雄中網站的最新消息：
+
+```python3
+import re
+import ssl
+import urllib.request
+
+
+ssl._create_default_https_context = ssl._create_unverified_context
+bot = urllib.request.urlopen('https://www.kshs.kh.edu.tw/view/index.php?WebID=269')
+content = bot.read().decode('utf8')
+
+for each_news in re.findall(r'28016.+NowSubId=0">(.+)</a>', content):
+    print(each_news)
+```
+
 # 程式語言
 
 ## C
