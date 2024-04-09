@@ -33,7 +33,11 @@ Github: https://github.com/monesijd
 
 ## 專案一
 
+開發一個可以查詢登革熱資訊的 line 機器人，機器人放在 render.com 使用免費方案，repo 在 https://github.com/monesijd/line_bot
+
 ## 專案二
+
+開發可以執行 Python 程式並將結果回傳至頻道的機器人，repo 在 https://github.com/monesijd/discord_bot
 
 # 軟體開發實務
 
@@ -44,6 +48,8 @@ Github: https://github.com/monesijd
 ### VScode
 
 ### Neovim
+
+
 
 # 程式語言
 
