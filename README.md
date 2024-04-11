@@ -230,6 +230,8 @@ int main(void) {
 }
 ```
 
+二微陣列指標示意圖
+
 ![陣列語法與指標語法的關係](https://raw.githubusercontent.com/monesijd/monesijd/main/c_pointer.png)
 
 ## Python
