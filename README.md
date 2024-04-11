@@ -83,6 +83,28 @@ git pull
 
 ### VScode
 
+#### 常用快捷鍵
+
+ctrl-shift-p 開啟 command palette
+
+alt-上或下 移動該行的程式碼
+
+shift-上或下選多行，若搭配滑鼠可一次選一整區
+
+ctrl-` 開啟或關閉終端機畫面
+
+#### 除錯
+
+f5 開始跑 debug mode
+
+f10 step over
+
+f11 step into
+
+shift-f5 離開 debugger
+
+f9 設定 breakpoint
+
 ### Neovim
 
 ```
