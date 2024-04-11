@@ -204,6 +204,8 @@ for each_news in re.findall(r'28016.+NowSubId=0">(.+)</a>', content):
 
 ## C
 
+![陣列語法與指標語法的關係](https://raw.githubusercontent.com/monesijd/monesijd/main/c_pointer.png)
+
 ### 指標
 
 ## Python
