@@ -204,6 +204,30 @@ for each_news in re.findall(r'28016.+NowSubId=0">(.+)</a>', content):
 
 ## C
 
+#### 一維陣列與指標
+
+```c
+#include <stdio.h>
+
+int main(void) {
+    int my_arr[] = {100, 200, 300};
+    int *arr_ptr = my_arr;
+    printf("%d\n", *(arr_ptr+1));  // 200
+}
+```
+
+#### 二維陣列與指標
+
+```c
+#include <stdio.h>
+
+int main(void) {
+    int my_2darr[][2] = {{100, 200}, {300, 400}};
+    int (*arr_ptr)[2] = my_2darr;
+    printf("%d\n", *(*(arr_ptr+1)+1));  // 400
+}
+```
+
 ![陣列語法與指標語法的關係](https://raw.githubusercontent.com/monesijd/monesijd/main/c_pointer.png)
 
 ### 指標
