@@ -55,6 +55,29 @@ GitHub: https://github.com/monesijd
 
 ## 版本控制系統 Git
 
+```bash
+# 初始化 repo
+git init
+
+# 新增有修改或還沒進入版控的 xxx.txt 至 staging area
+git add xxx.txt
+
+# 新增目前各種異動 (包含修改、尚未進入版控) 的所有檔案進入 staging area
+git add .
+
+# commit
+git commit -m 'commit message'
+
+# 將 github 的 repo 拉至本機
+git clone https://github.com/monesijd/monesijd.git
+
+# 將本機的 repo 變動推送回 github
+git push
+
+# 將 github 上面的變動都更新至本機
+git pull
+```
+
 ## 編輯器
 
 ### VScode
