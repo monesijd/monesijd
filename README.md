@@ -235,3 +235,51 @@ int main(void) {
 ## Python
 
 ### 物件導向
+
+#### 建立一個最簡單的 class
+
+```python3
+# 類別通常都是 Camel Case，沒有強制，但社群建議照這規範
+class MyClass:
+    pass
+
+# 建立 MyClass 的實體 my_instance
+my_instance = MyClass()
+```
+
+#### ```__init__``` 方法
+
+初始化實體時會自動執行
+
+```python3
+class Cat:
+    def __init__(self):
+        print('meow')
+
+my_cat = Cat()  # 印出 meow
+```
+
+#### 類別屬性 (class attritube)
+
+```python3
+class Car:
+    def __init__(self):
+        self.color = 'black'
+
+my_car = Car()
+print(my_car.color)  # 會印出 black
+```
+
+上面的範例 color 永遠都會是 black，可以在初始化實體時，將顏色傳入：
+
+```python3
+class Car:
+    def __init__(self, new_color):
+        self.color = new_color
+
+my_car = Car('red')
+print(my_car.color)  # 會印出 red
+
+my_car2 = Car('silver')
+print(my_car.color)  # 會印出 silver
+```
