@@ -45,6 +45,14 @@ GitHub: https://github.com/monesijd
 
 # 軟體開發實務
 
+## TDD (Test Driven Development)
+
+讓程式碼 testable (可測試性)
+
+1. 先寫測試 (此時的測試**一定**會失敗)
+2. 寫最少的程式，讓第一步的測試通過
+3. 重構 (refactoring)
+
 ## 版本控制系統 Git
 
 ## 編輯器
