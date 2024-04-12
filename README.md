@@ -53,6 +53,68 @@ GitHub: https://github.com/monesijd
 2. 寫最少的程式，讓第一步的測試通過
 3. 重構 (refactoring)
 
+比如要開發一個 add 函式，可以加總傳入的參數總和：
+
+```python3
+add(100, 200)  # 回傳 300
+```
+
+第一步，先寫測試：
+
+```python3
+# test_add.py
+from add import add
+
+result = add(100, 200)
+if result != 300:
+    print('測試失敗')
+```
+
+第二步，寫程式讓測試通過
+
+```python3
+# add.py
+def add(x, y):
+    return x + y
+```
+
+第三步，檢查是否需要重構，因為目前覺得不需要重構，所以跳過此步驟。
+
+假設要繼續加功能，希望傳入字串型別的數字也可以加總：
+
+```python3
+add('200', '300')  # 回傳 500
+```
+
+重複上述的三步驟。
+
+第一步，先寫測試：
+
+```python3
+# test_add.py
+from add import add
+
+result = add(100, 200)
+if result != 300:
+    print('測試失敗')
+
+result = add('200', '300')
+if result != 500:
+    print('測試失敗2')
+```
+
+第二步，寫程式讓測試通過
+
+```python3
+# add.py
+def add(x, y):
+    return int(x) + int(y)
+```
+
+第三步，檢查是否需要重構，因為目前覺得不需要重構，所以跳過此步驟。
+
+不斷的重複三步驟，讓程式有對應的測試程式碼可以驗證功能正常，更重要的是幫助自己思考如何才是可測試的程式架構。
+
 ## 版本控制系統 Git
 
 ```bash
