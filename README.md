@@ -10,7 +10,7 @@
 
 熟悉的程式語言: C, Python
 
-GitHub: https://github.com/monesijd
+GitHub: [https://github.com/monesijd](https://github.com/monesijd)
 
 # APCS 紀錄
 
@@ -27,22 +27,21 @@ GitHub: https://github.com/monesijd
 ## beecrowd
 
 一開始學習程式的時候，查詢網路後，我找到了 beecrowd 的解題網站。雖然這個網站是英文，但題目都較為基礎，我認為非常適合拿來練習新學的程式。
-相關的解題紀錄，放在https://github.com/monesijd/beecrowd
+相關的解題紀錄，放在 [https://github.com/monesijd/beecrowd](https://github.com/monesijd/beecrowd)
 
 ## Zerojudge
 
-我有空的時候會找 ZeroJudge 上的題目練習培養手感，寫的程式碼我會根據題目代號作為命名依據，放在 https://github.com/monesijd/zerojudge
+我有空的時候會找 ZeroJudge 上的題目練習培養手感，寫的程式碼我會根據題目代號作為命名依據，放在 [https://github.com/monesijd/zerojudge](https://github.com/monesijd/zerojudge)
 
 # 專案開發
 
 ## 專案一
 
-開發一個可以查詢登革熱資訊的 line 機器人，機器人放在 render.com 使用免費方案，repo 在 https://github.com/monesijd/line_bot
+開發一個可以查詢登革熱資訊的 line 機器人，機器人放在 render.com 使用免費方案，repo 在 [https://github.com/monesijd/line_bot](https://github.com/monesijd/line_bot)
 
 ## 專案二
 
-開發可以執行 Python 程式並將結果回傳至頻道的機器人，repo 在 https://github.com/monesijd/discord_bot
-
+開發可以執行 Python 程式並將結果回傳至頻道的機器人，repo 在 [https://github.com/monesijd/discord_bot](https://github.com/monesijd/discord_bot)
 # 軟體開發實務
 
 ## TDD (Test Driven Development)
